@@ -86,4 +86,13 @@ function checkAnswer(boolean) {
     }
 }
 
+document.addEventListener('keypress', (event) => {
+    switch(event.key) {
+        case "w": trueClick(); break;
+        case "f": falseClick(); break;
+        case " ": nextClick(); break;
+    }
+})
+
+
 showQuestion()
